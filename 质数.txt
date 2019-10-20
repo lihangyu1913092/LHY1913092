@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int a, i,flag=0;
+	a = 2;
+	printf("%6d", a);
+	for (a = 3; a <= 100; a++)
+	{
+		for(i = 2; i < a; i++)
+		{
+			if (a % i == 0)flag = 1;
+		}
+		if(flag==0) printf("%6d", a);
+		flag = 0;
+	}
+	return 0;
+
+}
